@@ -1,7 +1,6 @@
-package com.knosoftware.apps.foodorganizer.database.mysql
+package // -- package
 
 import android.content.Context
-import com.knosoftware.apps.foodorganizer.database.utils.DatabaseConnection
 import org.json.JSONArray
 
 /**
@@ -9,7 +8,7 @@ import org.json.JSONArray
  * based on method based query language format
  * Created by michaelknofler on 25.11.17.
  */
-open class MYSQLBuilder(context: Context, file: String) : DatabaseConnectionSupport, DbTableHandler {
+open class MYSQLBuilder(context: Context, file: String) : DatabaseConnectionSupport, SQLQueryHandler {
 
     /**
      * Order directions
